@@ -1,0 +1,157 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010; /* Dark background to make neon colors pop */
+    color: #fff; /* White text for contrast */
+}
+
+header {
+    background: linear-gradient(135deg, #00ff99, #ff33cc); /* Neon Green to Neon Pink Gradient */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition: background 0.5s ease;
+}
+
+header:hover {
+    background: linear-gradient(135deg, #ff33cc, #00ff99); /* Reverse the gradient on hover */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    transition: transform 0.3s ease;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.1); /* Image grows slightly on hover */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #1a1a1a; /* Dark background for sections */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 255, 255, 0.3); /* Neon Cyan shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0px 6px 20px rgba(255, 0, 255, 0.5); /* Neon Purple shadow */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+h1, h2 {
+    color: #fff; /* White text for headings */
+}
+
+/* Neon Links */
+a {
+    color: #00ff99; /* Neon Green */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff33cc; /* Neon Pink on hover */
+}
+
+/* Skills List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 8px 0;
+    padding: 6px;
+    background-color: #333; /* Dark background for list items */
+    color: #00ff99; /* Neon Green text */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #ff33cc; /* Neon Pink on hover */
+    transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    background-color: #ff33cc; /* Neon Pink */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #00ff99; /* Neon Green on hover */
+    transform: translateY(-3px); /* Button lifts slightly */
+}
+
+button:active {
+    transform: translateY(1px); /* Button pressed effect */
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #ff33cc; /* Neon Pink */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #00ff99; /* Neon Green */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    button, #back-to-top {
+        font-size: 18px;
+    }
+}
